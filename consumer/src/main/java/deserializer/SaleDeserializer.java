@@ -9,10 +9,9 @@ import java.io.IOException;
 public class SaleDeserializer implements Deserializer<Sale> {
     @Override
     public Sale deserialize(String s, byte[] sale) {
-
         try {
-            new ObjectMapper().readValue(sale, Sale.class);
-        } catch (IOException e) {
+            return new  ObjectMapper().readValue(sale, Sale.class);
+        } catch (Exception e) {
             e.printStackTrace();
         }
         return null;
