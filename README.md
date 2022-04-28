@@ -11,6 +11,7 @@ kafka-server-start c:\kafka\config\server.properties
 Comandos:
 kafka-topics.bat --bootstrap-server localhost:9092 --list
 Kafka-topics --bootstrap-server lokalhost:9092 --topic teste --describe
+kafka-consumer-groups.bat --bootstrap-server localhost:9092 --list
 
 Alterar partições em um tópico:
 Kafka-topics --bootstrap-server lokalhost:9092 --alter --topic teste --partitions 10
